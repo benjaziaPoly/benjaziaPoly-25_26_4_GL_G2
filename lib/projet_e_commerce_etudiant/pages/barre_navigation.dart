@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
-class BarreNavigationScreen extends StatefulWidget {
-  const BarreNavigationScreen({super.key});
+
+class BarreNavigation extends StatefulWidget {
+  const BarreNavigation({super.key});
 
   @override
-  State<BarreNavigationScreen> createState() => _BarreNavigationScreenState();
+  State<BarreNavigation> createState() => _MyWidgetState();
 }
 
-class _BarreNavigationScreenState extends State<BarreNavigationScreen> {
-
+class _MyWidgetState extends State<BarreNavigation> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Text("TO DO ..."));
+    return Scaffold(
       
+      appBar: AppBar(
+        title: Text("Page d'accueil"),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+      ),
+      body: Text("To DO....."),
+    );
   }
 }
