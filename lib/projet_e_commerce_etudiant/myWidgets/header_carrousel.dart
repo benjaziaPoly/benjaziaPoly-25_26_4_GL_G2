@@ -9,7 +9,7 @@ class HeaderCarrousel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        height: MediaQuery.of(context).size.height * 0.3,
+        height: MediaQuery.of(context).size.height * 0.25,
         width: MediaQuery.of(context).size.width * 0.9,
         child: CarouselSlider(
           options: CarouselOptions(autoPlay: true, viewportFraction: 1.0),
