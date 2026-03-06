@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DetailProduitsPage extends StatefulWidget {
-  const DetailProduitsPage({super.key});
+  String title;
+  DetailProduitsPage({super.key,required this.title});
 
   @override
   State<DetailProduitsPage> createState() => _MyWidgetState();
@@ -16,7 +17,7 @@ class _MyWidgetState extends State<DetailProduitsPage> {
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
-      body: Text("To DO....."),
+      body: Text(widget.title),
     );
   }
 }
